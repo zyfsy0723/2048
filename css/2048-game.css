@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf8ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: bold;
+    color: #776e65;
+    margin: 0 auto;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.score-box {
+    background-color: #bbada0;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: white;
+}
+
+.score-title {
+    font-size: 16px;
+}
+
+.score-number {
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: #bbada0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.grid-cell {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(238, 228, 218, 0.35);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: #776e65;
+}
+
+.number-2 {
+    background-color: #eee4da;
+}
+
+.number-4 {
+    background-color: #ede0c8;
+}
+
+.number-8 {
+    background-color: #f2b179;
+    color: white;
+}
+
+.number-16 {
+    background-color: #f59563;
+    color: white;
+}
+
+.number-32 {
+    background-color: #f67c5f;
+    color: white;
+}
+
+.number-64 {
+    background-color: #f65e3b;
+    color: white;
+}
+
+.number-128 {
+    background-color: #edcf72;
+    color: white;
+    font-size: 35px;
+}
+
+.number-256 {
+    background-color: #edcc61;
+    color: white;
+    font-size: 35px;
+}
+
+.number-512 {
+    background-color: #edc850;
+    color: white;
+    font-size: 35px;
+}
+
+.number-1024 {
+    background-color: #edc53f;
+    color: white;
+    font-size: 30px;
+}
+
+.number-2048 {
+    background-color: #edc22e;
+    color: white;
+    font-size: 30px;
+}
+
+.game-over {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(238, 228, 218, 0.73);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #776e65;
+    display: none;
+}
+
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #8f7a66;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #9f8a76;
+}

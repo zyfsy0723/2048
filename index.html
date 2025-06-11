@@ -3,97 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2048 Hell - A Challenging Twist on the Classic Game</title>
-  <link rel="canonical" href="https://www.example.com/2048-game">
-  <style>
-    /* Base styles using Apple's typical color scheme */
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f5f5f7; /* light gray background common in Apple design */
-      color: #1d1d1f; /* dark text for readability */
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    
-    header {
-      background-color: #fff;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 1px solid #ccc;
-    }
-    
-    h1 {
-      color: #007AFF; /* Apple blue */
-      margin: 0;
-      font-size: 2.5em;
-    }
-    
-    h2 {
-      color: #5856D6; /* a complementary Apple-style purple */
-      margin-top: 30px;
-      margin-bottom: 10px;
-      font-size: 1.5em;
-    }
-    
-    .content {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    /* Responsive iFrame container */
-    .iframe-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 75%; /* 调整宽高比 */
-      height: 0;
-      overflow: hidden;
-      margin-bottom: 20px;
-    }
-    
-    .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-    
-    /* Responsive adjustments for smaller screens */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2em;
-      }
-      
-      h2 {
-        font-size: 1.2em;
-      }
-      
-      .content {
-        padding: 15px;
-      }
-    }
-  </style>
+  <title>Game Portal - Play Awesome Games!</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>2048 Hell</h1>
+    <h1>Welcome to Our Game Portal!</h1>
   </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games/2048.html">Play 2048</a></li>
+      <li><a href="about.html">About</a></li>
+      <!-- Add links to more games here as they are created -->
+    </ul>
+  </nav>
+
   <div class="content">
-    <h2>Overview</h2>
-    <p>Experience a twist on the classic 2048 game with a hellish challenge that tests your puzzle skills.</p>
-    
-    <h2>Play Online</h2>
-    <div class="iframe-container">
-      <iframe src="https://www.2048.org/" sandbox="allow-scripts allow-same-origin" allowfullscreen></iframe>
+    <h2>Our Games</h2>
+    <p>Choose a game below and start playing!</p>
+
+    <div class="game-gallery">
+      <div class="game-card">
+        <h3>2048 Hell</h3>
+        <p>A challenging twist on the classic 2048. Combine tiles to reach the 2048 tile. Good luck!</p>
+        <a href="games/2048.html" class="play-button">Play Now</a>
+      </div>
+
+      <!-- Add more game cards here when you add new games -->
+      <!-- Example for a new game (uncomment and modify when ready):
+      <div class="game-card">
+        <h3>Another Cool Game</h3>
+        <p>Description of another cool game that will test your skills and entertain you for hours.</p>
+        <a href="games/another-cool-game.html" class="play-button">Play Now</a>
+      </div>
+      -->
     </div>
-    
-    <h2>Game Description</h2>
-    <p>
-      2048 Hell brings a unique and challenging variation to the beloved 2048 puzzle game. With fiery visuals and a strategic twist, this game invites you to combine numbers in unexpected ways to survive the inferno. Designed to captivate both casual players and dedicated puzzle enthusiasts, every move counts on your quest for the ultimate high score.
-    </p>
   </div>
+
 </body>
 </html>
