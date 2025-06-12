@@ -137,7 +137,7 @@ nav ul li a:hover {
 .iframe-container {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Max width for the game iframe */
+    max-width: 840px; /* Reduced from 1200px to shrink horizontally by ~30% */
     padding-bottom: 75%; /* Adjust aspect ratio if needed, e.g., 4:3 */
     height: 0;
     overflow: hidden;
